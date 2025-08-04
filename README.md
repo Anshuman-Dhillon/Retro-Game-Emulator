@@ -1,13 +1,13 @@
 # Retro Game Emulator
 
-A simple, cycle-based emulator for the original Game Boy — designed and built from scratch in C++.  
+A simple emulator for retro games, written in C++ in Visual Studio, inspired by the original Game Boy.
 **This is an educational project**, intended to deepen understanding of low-level systems, CPU architecture, graphics pipelines, and hardware emulation.
 
 ---
 
 ## About the Project
 
-**Retro Game Emulator** is a CPU-accurate Game Boy emulator built for learning purposes. It simulates how the original handheld console operates — from instruction decoding, memory-mapped I/O, and timers, to pixel-perfect graphics rendering.
+**Retro Game Emulator** is a CPU-accurate Game Boy emulator built for learning purposes. It simulates how the original handheld console operates in terms of instruction decoding, memory-mapped I/O, timers, and graphics rendering.
 
 This project is not meant to be the most accurate emulator out there, but instead aims to explore how real hardware can be modeled in software from the ground up.
 
@@ -15,15 +15,14 @@ This project is not meant to be the most accurate emulator out there, but instea
 
 ## Key Features
 
-- ✅ LR35902 (8-bit) CPU emulation
-- ✅ Accurate instruction decoding and execution (passes Blargg’s `cpu_instrs.gb`)
-- ✅ Memory management (ROM, RAM, VRAM, OAM, HRAM, I/O registers)
-- ✅ PPU (Pixel Processing Unit) for scanline-based rendering
-- ✅ VBlank, HBlank, and LCD STAT interrupt handling
-- ✅ Tile-based background and sprite rendering
-- ✅ Supports `.gb` ROMs (games or test programs)
-- ✅ ImGui-powered interface
-- ✅ Test program loader and memory viewer
+- LR35902 (8-bit) CPU emulation
+- Accurate instruction decoding and execution (passes Blargg’s `cpu_instrs.gb`)
+- Memory management (ROM, RAM, VRAM, OAM, HRAM, I/O registers)
+- PPU (Pixel Processing Unit) for scanline-based rendering
+- VBlank, HBlank, and LCD STAT interrupt handling
+- Tile-based background and sprite rendering
+- Supports `.gb` ROMs (games or test programs)
+- ImGui-powered interface
 
 ---
 
@@ -87,7 +86,7 @@ This emulator includes optional debugging tools via **Dear ImGui**:
 - Visual Studio (2022+)
 - C++17 or newer
 - GLFW
-- OpenGL
+- OpenGL 3.3+
 - Dear ImGui
 
 ### Build & Run
@@ -95,14 +94,13 @@ This emulator includes optional debugging tools via **Dear ImGui**:
 1. Clone the repository
 2. Open the `.sln` file in Visual Studio
 3. Build and run
-4. Use the GUI to load a `.gb` file and start emulation
+4. Click on file > Load ROM to load a `.gb` file and start emulation
 
 ---
 
 ## ⚠️ Limitations
 
 - No sound (APU not implemented)
-- No save battery (MBCs like MBC1/3 not yet implemented)
 - Interrupt timing may be slightly off (not cycle-perfect yet)
 - Some homebrew timing test ROMs (like `oam_bug.gb`) may fail
 - Only `.gb` (non-color) ROMs supported right now
@@ -116,18 +114,19 @@ This project was built to:
 - Understand how classic consoles work internally
 - Learn CPU and memory emulation
 - Understand graphics pipelines at the hardware level
-- Practice debugging with scanline-level accuracy
+- Practice debugging with an immediate mode library
 - Explore low-level I/O, timers, and interrupt logic
 
 ---
 
-## Acknowledgments
+## Acknowledgments/Resources Used
 
 - [GBDev Wiki](https://gbdev.io/)
 - [Blargg’s test ROMs](https://github.com/retrio/gb-tests)
 - [ImGui](https://github.com/ocornut/imgui)
 - [Dear ImGui + GLFW examples](https://github.com/ocornut/imgui/wiki)
-
+- [The Ultimate Game Boy Talk (33c3) - YouTube](https://youtu.be/HyzD8pNlpwI)
+- [Pandocs](https://gbdev.io/pandocs)
 ---
 
 ## License
