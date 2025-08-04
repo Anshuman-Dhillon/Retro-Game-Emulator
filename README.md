@@ -13,7 +13,7 @@ This project is not meant to be the most accurate emulator out there, but instea
 
 ---
 
-## Key Features
+## Technical Features
 
 - LR35902 (8-bit) CPU emulation
 - Accurate instruction decoding and execution (passes Blargg’s `cpu_instrs.gb`)
