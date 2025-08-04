@@ -7,7 +7,7 @@ A simple emulator for retro games, written in C++ in Visual Studio, inspired by 
 
 ## About the Project
 
-**Retro Game Emulator** is a CPU-accurate Game Boy emulator built for learning purposes. It simulates how the original handheld console operates in terms of instruction decoding, memory-mapped I/O, timers, and graphics rendering.
+**Retro Game Emulator** is a Game Boy emulator built for learning purposes. It simulates how the original handheld console operates in terms of instruction decoding, memory-mapped I/O, timers, and graphics rendering.
 
 This project is not meant to be the most accurate emulator out there, but instead aims to explore how real hardware can be modeled in software from the ground up.
 
@@ -80,6 +80,14 @@ This emulator includes optional debugging tools via **Dear ImGui**:
 - Step-by-step execution (CPU and scanline stepping)
 
 ---
+
+RetroEmulator/
+├── emulator.cpp / .h       ← Core logic (CPU, PPU, memory)
+├── main.cpp                ← Program entry
+├── Dependencies/           ← GLFW, tinyfiledialogs, glad
+├── imgui/                  ← Dear ImGui files
+├── assets/                 ← Optional: test ROMs or tile data
+├── README.md
 
 ### Requirements and Dependencies
 
