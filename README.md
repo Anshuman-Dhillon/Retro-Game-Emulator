@@ -12,7 +12,7 @@ This project is not meant to be the most accurate emulator out there, but instea
 - LR35902 (8-bit) CPU emulation
 - Accurate instruction decoding and execution (passes Blargg’s `cpu_instrs.gb`)
 - Memory management (ROM, RAM, VRAM, OAM, HRAM, I/O registers)
-- PPU (Pixel Processing Unit) for scanline-based rendering
+- PPU (Picture Processing Unit) for scanline-based rendering
 - VBlank, HBlank, and LCD STAT interrupt handling
 - Tile-based background and sprite rendering
 - Supports `.gb` ROMs (games or test programs)
@@ -47,7 +47,7 @@ The emulator simulates the Game Boy’s 64KB address space:
 | `FF80–FFFE`   | High RAM (HRAM)                  |
 | `FFFF`        | Interrupt Enable Register        |
 
-### PPU (Graphics Rendering)
+### PPU (Picture Processing Unit)
 
 The PPU draws the screen line by line (scanlines), in a cycle-accurate manner:
 
@@ -92,7 +92,7 @@ This emulator includes optional debugging tools via **Dear ImGui**:
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - No sound (APU not implemented)
 - Interrupt timing may be slightly off (not cycle-perfect yet)
