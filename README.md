@@ -81,14 +81,6 @@ This emulator includes optional debugging tools via **Dear ImGui**:
 
 ---
 
-RetroEmulator/
-├── emulator.cpp / .h       ← Core logic (CPU, PPU, memory)
-├── main.cpp                ← Program entry
-├── Dependencies/           ← GLFW, tinyfiledialogs, glad
-├── imgui/                  ← Dear ImGui files
-├── assets/                 ← Optional: test ROMs or tile data
-├── README.md
-
 ### Requirements and Dependencies
 
 - Visual Studio (2022+)
