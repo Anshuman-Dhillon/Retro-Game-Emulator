@@ -122,7 +122,7 @@ This project was built to:
 ## Acknowledgments/Resources Used
 
 - [GBDev Wiki](https://gbdev.io/)
-- [Blargg’s test ROMs](https://github.com/retrio/gb-tests)
+- [Blargg’s test ROMs](https://github.com/retrio/gb-test-roms)
 - [ImGui](https://github.com/ocornut/imgui)
 - [Dear ImGui + GLFW examples](https://github.com/ocornut/imgui/wiki)
 - [The Ultimate Game Boy Talk (33c3) - YouTube](https://youtu.be/HyzD8pNlpwI)
