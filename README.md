@@ -1,13 +1,7 @@
 # Retro Game Emulator
 
 A simple emulator for retro games, written in C++ in Visual Studio, inspired by the original Game Boy.
-**This is an educational project**, intended to deepen understanding of low-level systems, CPU architecture, graphics pipelines, and hardware emulation.
-
----
-
-## About the Project
-
-**Retro Game Emulator** is a Game Boy emulator built for learning purposes. It simulates how the original handheld console operates in terms of instruction decoding, memory-mapped I/O, timers, and graphics rendering.
+**This is an educational project**, intended to deepen understanding of low-level systems, CPU architecture, graphics pipelines, and hardware emulation. It simulates how the original handheld console operates in terms of instruction decoding, memory-mapped I/O, timers, and graphics rendering.
 
 This project is not meant to be the most accurate emulator out there, but instead aims to explore how real hardware can be modeled in software from the ground up.
 
